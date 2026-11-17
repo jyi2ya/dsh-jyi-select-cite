@@ -18,7 +18,7 @@ DSH 内置的引用提供选区手势和紧凑预览。要把选中的聊天文�
 
 ## 依赖
 
-客户端的锚点与弹层行为全部由 [dsh-jyi-hackyapi](https://github.com/jyi2ya/dsh-jyi-hackyapi) 提供。它好，本插件就好；它坏，本插件就坏。
+客户端的选区解析、锚点事件与弹层定位全部由 [dsh-jyi-hackyapi](https://github.com/jyi2ya/dsh-jyi-hackyapi) 提供。它好，本插件就好；它坏，本插件就坏。
 
 DSH 只为直接装进 profile 的 bundle 建立层，包自己声明的依赖不会变成 profile 层。安装时请把两个包放在同一条命令里。
 
