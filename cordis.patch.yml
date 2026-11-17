@@ -1,0 +1,5 @@
+# dsh-jyi-select-cite bundle patch: mounts the host half.
+- insert:
+    - id: select-cite
+      name: dsh-jyi-select-cite
+      config: {}

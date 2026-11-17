@@ -1,0 +1,41 @@
+{
+  "name": "dsh-jyi-select-cite",
+  "version": "0.2.0",
+  "description": "Chat-centered selection citing: quote a chat selection, attach an E-code review comment, and fill both into the composer draft.",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": ["dist", "lib", "cordis.patch.yml", "presets.example.json", "README.md", "LICENSE"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jyi2ya/dsh-jyi-select-cite.git"
+  },
+  "homepage": "https://github.com/jyi2ya/dsh-jyi-select-cite#readme",
+  "bugs": {
+    "url": "https://github.com/jyi2ya/dsh-jyi-select-cite/issues"
+  },
+  "license": "AGPL-3.0-or-later",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "*"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "dsh-jyi-hackyapi"
+      ]
+    }
+  }
+}

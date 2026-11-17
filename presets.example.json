@@ -1,0 +1,27 @@
+[
+  {
+    "code": "E01",
+    "text": "claim is not backed by the code",
+    "detail": "The comment asserts a behavior the code does not implement or test. Point to the check that backs it, or soften the claim."
+  },
+  {
+    "code": "E02",
+    "text": "missing error path",
+    "detail": "The branch handles the success case only. Add the failure path or document why it cannot happen."
+  },
+  {
+    "code": "E03",
+    "text": "unbounded loop or missing exit condition",
+    "detail": "The loop depends on external state for termination. Add a bound or an explicit stop condition."
+  },
+  {
+    "code": "E04",
+    "text": "duplicated logic from another module",
+    "detail": "The same rule exists elsewhere. Move it into one helper or explain why the copy is intentional."
+  },
+  {
+    "code": "E05",
+    "text": "naming does not match behavior",
+    "detail": "The name suggests one effect and the body performs another. Rename it or split the body."
+  }
+]
